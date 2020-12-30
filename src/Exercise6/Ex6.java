@@ -27,6 +27,9 @@ public class Ex6 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -35,6 +38,14 @@ public class Ex6 extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+
+        jMenu1.setText("File");
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,7 +70,7 @@ public class Ex6 extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("X60");
+        jButton4.setText("X70");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -70,49 +81,63 @@ public class Ex6 extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jLabel2.setText("TYPE OF CAR:");
+        jLabel2.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel2.setText("PROTON ");
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane2.setViewportView(jTextArea2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton4)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 106, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jScrollPane1)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jButton4)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(40, 40, 40)
+                                                .addComponent(jButton3))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(124, 124, 124)
+                                                .addComponent(jButton2)
+                                                .addGap(38, 38, 38)
+                                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(jScrollPane2)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(158, 158, 158)
                         .addComponent(jLabel2)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addGap(32, 32, 32)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton4))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3)
+                    .addComponent(jButton4))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
@@ -128,7 +153,7 @@ public class Ex6 extends javax.swing.JFrame {
         int year = 9;
         int totalyear = year*12;
         double totalint = (3.0/100)*44600*year;
-        double Sprice = (446000+totalint)/totalyear;
+        double Sprice = (44600+totalint)/totalyear;
         
         jTextArea1.setText(
                 "\n Proton PERSONA "
@@ -136,7 +161,7 @@ public class Ex6 extends javax.swing.JFrame {
               + "\n Boot\t : " + space 
               + "\n Seat type\t : " + seat
               + "\n Special Features : " + special
-              + "\n Car Spec  \t : 1.6L Standard CVT - RM44,600.00"
+              + "\n Car Spec Price  \t : 1.6L Standard CVT - RM44,600.00"
               + "\n Monthly Installment(RM)  \t : " + Sprice
               
         );
@@ -153,7 +178,7 @@ public class Ex6 extends javax.swing.JFrame {
         
         int year = 9;
         int totalyear = year*12;
-        double totalint = (3.0/100)*44600*year;
+        double totalint = (3.0/100)*35800*year;
         double Sprice = (35800+totalint)/totalyear;
         
         jTextArea1.setText(
@@ -163,7 +188,7 @@ public class Ex6 extends javax.swing.JFrame {
               + "\n Seat type\t : " + seat
               + "\n Special Features : " + special
               + "\n Color\t : " + Color
-              + "\n Car Spec  \t : 1.3L Standard AT - RM35,800.00"
+              + "\n Car Spec Price  \t : 1.3L Standard AT - RM35,800.00"
               + "\n Monthly Installment(RM)  \t : " + Sprice
               
         );
@@ -179,7 +204,7 @@ public class Ex6 extends javax.swing.JFrame {
         
         int year = 9;
         int totalyear = year*12;
-        double totalint = (3.0/100)*44600*year;
+        double totalint = (3.0/100)*84800*year;
         double Sprice = (84800+totalint)/totalyear;
         
         jTextArea1.setText(
@@ -189,7 +214,7 @@ public class Ex6 extends javax.swing.JFrame {
               + "\n Seat type\t : " + seat
               + "\n Special Features : " + special
               + "\n Color\t : " + Color
-              + "\n Car Spec  \t : 1.5L Executive - RM84,800.00"
+              + "\n Car Spec Price  \t : 1.5L Executive - RM84,800.00"
               + "\n Monthly Installment(RM)  \t : " + Sprice
               
         );
@@ -205,17 +230,18 @@ public class Ex6 extends javax.swing.JFrame {
         
         int year = 9;
         int totalyear = year*12;
-        double totalint = (3.0/100)*44600*year;
+        double totalint = (3.0/100)*106800*year;
         double Sprice = (106800+totalint)/totalyear;
         
+        jTextArea2.setText("Proton X70:  ");
         jTextArea1.setText(
-                "\n Proton X70 "
-              + "\n Features: "
-              + "\n Remote Control : " + remote 
+                
+                "\n Features: "
+              + "\n Remote Control : " +  remote 
               + "\n Seat type\t : " + seat
               + "\n Special Features : " + special
               + "\n Color\t : " + Color
-              + "\n Car Spec  \t : 1.8L TGDI Executive - RM106,800.00"
+              + "\n Car Spec Price  \t : 1.8L TGDI Executive - RM106,800.00"
               + "\n Monthly Installment(RM)  \t : " + Sprice
               
         );
@@ -263,7 +289,12 @@ public class Ex6 extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }
